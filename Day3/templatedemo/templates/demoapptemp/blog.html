@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Blog</title>
+    <link rel="stylesheet" href="{% static 'static/add.css' %}">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        article {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+          /* Styles for the time box */
+          .time-box {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .time-box h2 {
+            margin: 0;
+            color: #333;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alex Blogs</h1>
+    </header>
+    <main>
+        <article>
+            <div class="time-box">
+                <h2>{{message}}. The Time is {{display_time}}</h2>
+            </div>
+            <p> </p>
+        </article>
+        <article>
+            <h2>The Chola's Architectural Grandeur</h2>
+            <img src="{% static 'images/bigtemple.jpg' %}" alt="Big Temple">
+            <p></p>
+        </article>
+        <!-- Add more articles for additional blog posts -->
+    </main>
+</body>
+</html>
