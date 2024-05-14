@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Blog</title>
+    <link rel="stylesheet" href="{% static 'static/add.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Alex Blogs</h1>
+    </header>
+    <main>
+        <article>
+            <div class="time-box">
+                <h2>{{ message }}. The Time is {{ display_time }}</h2>
+            </div>
+            <p> </p>
+        </article>
+        <article>
+        {% if stud_list %}
+        <table>
+            {% for student in stud_list %}
+            <tr>
+                <td>{{ student.student_name }}</td>
+                <td>{{ student.student_rollno }}</td>
+                <td>{{ student.student_total }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+        </article>
+        <!-- Add more articles for additional blog posts -->
+    </main>
+</body>
+</html>
