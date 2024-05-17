@@ -20,4 +20,8 @@ from cookiesapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cookies/',views.cookies_and_session_count),
+    path('setsession/',views.set_session),
+    path('getsession/',views.get_session),
+    path('delete_session/',views.delete_session),
+    
 ]
