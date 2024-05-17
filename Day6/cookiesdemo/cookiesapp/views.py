@@ -15,3 +15,22 @@ def cookies_and_session_count(request):
     response.set_cookie("count", count)
 
     return response
+
+def set_session(request):
+    request.session['username'] = 'Alex Elancheliyan'
+    message ="<h1> The Session Data is set successfully </h1>"
+    return HttpResponse(message)
+
+def get_session(request):
+    username = request.session.get('username','Guest')
+    return HttpResponse(f"The Session Data is {username}")
+
+
+def delete_session(request):
+    try:
+        del request.session['username']
+
+    except KeyError:
+        pass   
+
+    return HttpResponse(f"The Session/Session Data Deleted Successfully")
