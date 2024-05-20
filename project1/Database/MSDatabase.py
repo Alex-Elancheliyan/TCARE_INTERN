@@ -9,7 +9,7 @@ from sqlalchemy.orm import declarative_base
 
 
 #ENGINE CREATION
-DB_URL ='postgresql://postgres:1234@localhost/AlexDataBase'
+DB_URL ='postgresql URL credentials'
 engine = create_engine(DB_URL)
 SessionLocal = sessionmaker(autocommit=False,autoflush=False,bind=engine)
 Base = declarative_base()
