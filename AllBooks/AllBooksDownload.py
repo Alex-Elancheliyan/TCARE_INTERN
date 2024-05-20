@@ -35,20 +35,18 @@ class PettyCash(Base):
 
 app = FastAPI(title="All Books Download")
 
-# MySQL Database Configuration
+
 DB_USER = 'root'
 DB_PASSWORD = 'alex1234'
 DB_HOST = 'localhost'
 DB_NAME = 'axdatabase'
 
-# SQLAlchemy Database Connection
-SQLALCHEMY_DATABASE_URL ="mysql+pymysql://root:alex1234@localhost:3306/axdatabase"
+SQLALCHEMY_DATABASE_URL = "MYSQL DB URL"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 def download_books(table_name: str = Query(None), all_tables: bool = Query(False)):
     if all_tables:
-        # Download all tables as a single Excel file with each table as a sheet
         metadata = MetaData()
         metadata.reflect(bind=engine)
         with engine.connect() as conn:
@@ -65,7 +63,6 @@ def download_books(table_name: str = Query(None), all_tables: bool = Query(False
         return {"message": "All tables downloaded successfully as a single Excel file."}
 
     elif table_name:
-        # Download a specific table
         table_class = globals().get(table_name)
         if table_class:
             with SessionLocal() as session:
