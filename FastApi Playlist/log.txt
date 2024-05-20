@@ -1,0 +1,4 @@
+notification for alex@gmail.com: some notificationfound query: Hello
+message to alex@gmail.com
+found query: World
+message to alex@gmail.com
