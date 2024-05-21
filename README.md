@@ -44,5 +44,5 @@ For any inquiries or questions regarding this project, feel free to contact me a
 
 ## Collaboration
 
-I welcome collaboration and contributions! You can find me on GitHub at [@yAlex-Elancheliyan](https://github.com/Alex-Elancheliyan).
+I welcome collaboration and contributions! You can find me on GitHub at [@Alex-Elancheliyan](https://github.com/Alex-Elancheliyan).
 
