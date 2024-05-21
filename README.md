@@ -38,10 +38,10 @@ Each branch contains its own set of instructions and requirements for setting up
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue.
 
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 For any inquiries or questions regarding this project, feel free to contact me at [alexcheliyan1@gmail.com](mailto:alexcheliyan1@gmail.com).
+
+## Collaboration
+My GitHub: [@Alex-Elancheliyan](https://github.com/Alex-Elancheliyan).
+
