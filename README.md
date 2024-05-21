@@ -43,5 +43,6 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 For any inquiries or questions regarding this project, feel free to contact me at [alexcheliyan1@gmail.com](mailto:alexcheliyan1@gmail.com).
 
 ## Collaboration
-My GitHub: [@Alex-Elancheliyan](https://github.com/Alex-Elancheliyan).
+
+I welcome collaboration and contributions! You can find me on GitHub at [@yAlex-Elancheliyan](https://github.com/Alex-Elancheliyan).
 
