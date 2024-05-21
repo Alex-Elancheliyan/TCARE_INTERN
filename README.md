@@ -1,7 +1,3 @@
-Certainly! Here's a professional README template you can use:
-
----
-
 # TCARE Internship Project
 
 ## Overview
@@ -48,5 +44,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Contact
 
-For any inquiries or questions regarding this project, feel free to contact me at [alexcheliyan1@gmail.com(mailto:alexcheliyan1@gmail.com).
-
+For any inquiries or questions regarding this project, feel free to contact me at [alexcheliyan1@gmail.com](mailto:alexcheliyan1@gmail.com).
