@@ -2,21 +2,18 @@ from fastapi import FastAPI, Response
 from datetime import datetime, timedelta
 from dbmodels import Emailreport
 from MSDatabase import SessionLocal
-import xlsxwriter
-from io import BytesIO
-import uvicorn
-
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
-
-
-app = FastAPI()
-
-import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
+from io import BytesIO
+import xlsxwriter
+import smtplib
+
+
+app = FastAPI()
 
 @app.get("/download_report")
 async def download_report_and_send_email(email_address: str = None):
@@ -119,6 +116,3 @@ def schedule_email_report():
 
 schedule_email_report()
 
-
-if __name__ == "__main__":
-    uvicorn.run("reportmail:app", host="127.0.0.1", port=8000, reload=True)
