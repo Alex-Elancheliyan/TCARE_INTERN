@@ -68,8 +68,8 @@ async def download_report_and_send_email(email_address: str = None):
 
 async def send_email_with_report(email_address, attachment_data):
     
-    sender_email = "alexcheliyan1@gmail.com"
-    sender_password = "emjk hhvh ydpp biya"
+    sender_email = "ENTER YOUR EMAIL ID HERE"
+    sender_password = " ENTER YOUR EMAIL PASSWORD HERE"
     smtp_server = "smtp.gmail.com"
     smtp_port = 587  
     message = MIMEMultipart()
@@ -91,7 +91,7 @@ async def send_email_with_report(email_address, attachment_data):
     </ul>
     <p>We encourage you to review the report and reach out with any questions or feedback.<br><br>
        Best regards,<br>
-       Alex Cheliyan,<br>
+       Your Name,<br>
     </p>
     </body>
     </html>"""
