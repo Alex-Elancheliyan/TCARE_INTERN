@@ -1,0 +1,15 @@
+<html>
+
+<h1> Please Register Here! </h1>
+<form method="post" autocomplete="off">
+
+    {% csrf_token %}
+    {{registerform.as_p}}
+
+    <input type="submit" value="Register"/>
+
+
+</form>
+
+
+</html>
