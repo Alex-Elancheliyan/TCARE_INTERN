@@ -10,6 +10,7 @@ import uvicorn
 
 Base = declarative_base()
 
+#TABLE MODELS
 class BankDeposit(Base):
     __tablename__ = 'bank_deposit'
 
