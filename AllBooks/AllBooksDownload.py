@@ -33,14 +33,15 @@ class PettyCash(Base):
     Balance_Amount = Column(Float, nullable=False)
     Terminal_Id = Column(Integer, nullable=False)
     Merchant_Id = Column(Integer, nullable=False)
-
+    
+#APP INSTANCE
 app = FastAPI(title="All Books Download")
 
 
 DB_USER = 'root'
-DB_PASSWORD = 'alex1234'
+DB_PASSWORD = 'DBPASSWORD'
 DB_HOST = 'localhost'
-DB_NAME = 'axdatabase'
+DB_NAME = 'DBNAME'
 
 SQLALCHEMY_DATABASE_URL = "MYSQL DB URL"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
