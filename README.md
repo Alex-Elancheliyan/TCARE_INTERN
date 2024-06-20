@@ -1,4 +1,4 @@
-# TCARE Internship 
+# TCARE Internship
 
 ## Overview
 
