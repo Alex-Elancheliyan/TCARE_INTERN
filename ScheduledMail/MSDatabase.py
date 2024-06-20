@@ -7,7 +7,8 @@ from sqlalchemy.orm import declarative_base
 
 
 #ENGINE CREATION
-DB_URL ='YOUR DB URL'
+
+DB_URL ='YOUR DB URL'  #Replace your prefered Database url
 engine = create_engine(DB_URL)
 SessionLocal = sessionmaker(autocommit=False,autoflush=False,bind=engine)
 Base = declarative_base()
