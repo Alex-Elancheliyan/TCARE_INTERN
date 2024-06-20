@@ -10,7 +10,7 @@ import uvicorn
 
 Base = declarative_base()
 
-#TABLE MODELS
+#TABLE MODEL-1
 class BankDeposit(Base):
     __tablename__ = 'bank_deposit'
 
@@ -23,6 +23,7 @@ class BankDeposit(Base):
     Terminal_Id = Column(Integer, nullable=False)
     Merchant_Id = Column(Integer, nullable=False)
 
+#TABLE MODEL-2
 class PettyCash(Base):
     __tablename__ = 'petty_cash'
 
