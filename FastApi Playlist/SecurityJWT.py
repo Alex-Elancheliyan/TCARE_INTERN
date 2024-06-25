@@ -10,6 +10,7 @@ import uvicorn
 
 app=FastAPI()
 
+#Using DotEnv is Preferred
 SECRET_KEY = "thequickbrownfoxjumpoverthelazydog"
 ALGORITHM = 'HS256'
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
